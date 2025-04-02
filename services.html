@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - ModernCare Hospital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/theme-switcher.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2196F3">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="ModernCare Hospital Logo">
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><button class="cta-button">Book Appointment</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Our Medical Services</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Comprehensive Healthcare Solutions for Your Well-being</p>
+        </div>
+    </section>
+
+    <!-- 3D Medical Symbol Section -->
+    <section class="medical-3d">
+        <div class="container">
+            <div class="medical-3d-wrapper">
+                <div id="medical-canvas" data-aos="fade-up"></div>
+                <div class="medical-3d-content" data-aos="fade-left">
+                    <h2>Modern Healthcare</h2>
+                    <p>Experience the future of medical care with our cutting-edge technology and expert professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-grid">
+        <div class="container">
+            <div class="services-container">
+                <!-- Cardiology -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive heart care services including diagnostics, treatment, and preventive care.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Heart Disease Treatment</li>
+                            <li>Cardiac Surgery</li>
+                            <li>Stress Testing</li>
+                            <li>Echocardiography</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Orthopedics -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Orthopedics</h3>
+                    <p>Expert care for bones, joints, and musculoskeletal conditions.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Joint Replacement</li>
+                            <li>Sports Medicine</li>
+                            <li>Spine Surgery</li>
+                            <li>Fracture Care</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pediatrics -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Pediatrics</h3>
+                    <p>Specialized healthcare services for children of all ages.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Well-child Visits</li>
+                            <li>Vaccinations</li>
+                            <li>Growth Monitoring</li>
+                            <li>Childhood Illness</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Emergency Care -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency medical services for critical situations.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Trauma Care</li>
+                            <li>Acute Illness</li>
+                            <li>Injury Treatment</li>
+                            <li>Emergency Surgery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Neurology -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurology</h3>
+                    <p>Specialized care for brain and nervous system conditions.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Stroke Treatment</li>
+                            <li>Epilepsy Care</li>
+                            <li>Multiple Sclerosis</li>
+                            <li>Neurological Disorders</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Oncology -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Oncology</h3>
+                    <p>Comprehensive cancer care and treatment services.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Cancer Diagnosis</li>
+                            <li>Chemotherapy</li>
+                            <li>Radiation Therapy</li>
+                            <li>Cancer Surgery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Services Section -->
+    <section class="specialized-services">
+        <div class="container">
+            <h2 data-aos="fade-up">Specialized Services</h2>
+            <div class="specialized-grid">
+                <div class="specialized-card" data-aos="fade-up">
+                    <div class="specialized-content">
+                        <h3>Robotic Surgery</h3>
+                        <p>State-of-the-art robotic surgical procedures for precise and minimally invasive treatments.</p>
+                        <ul>
+                            <li>Prostate Surgery</li>
+                            <li>Gynecological Procedures</li>
+                            <li>General Surgery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="specialized-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="specialized-content">
+                        <h3>Telemedicine</h3>
+                        <p>Virtual healthcare consultations for convenient access to medical expertise.</p>
+                        <ul>
+                            <li>Remote Consultations</li>
+                            <li>Follow-up Care</li>
+                            <li>Health Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="specialized-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="specialized-content">
+                        <h3>Rehabilitation</h3>
+                        <p>Comprehensive physical and occupational therapy services.</p>
+                        <ul>
+                            <li>Physical Therapy</li>
+                            <li>Occupational Therapy</li>
+                            <li>Speech Therapy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Need Medical Care?</h2>
+                <p>Schedule an appointment with our expert medical professionals today.</p>
+                <button class="cta-button">Book an Appointment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>ModernCare Hospital is committed to providing exceptional healthcare services with a focus on patient comfort and well-being.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ModernCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/medical-3d.js"></script>
+</body>
+</html> 
