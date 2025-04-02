@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - ModernCare Hospital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/doctors.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/theme-switcher.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">ModernCare</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html" class="active">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="#" id="contactBtn" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="doctors-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Our Expert Doctors</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Meet our team of experienced and dedicated healthcare professionals who are committed to providing the best medical care.</p>
+        </div>
+    </section>
+
+    <!-- Doctors Grid -->
+    <section class="doctors-grid">
+        <!-- Doctor 1 -->
+        <div class="doctor-card" data-aos="fade-up">
+            <div class="doctor-image">
+                <img src="images/doctor1.jpg" alt="Dr. Sarah Johnson">
+                <div class="doctor-overlay"></div>
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name">Dr. Sarah Johnson</h3>
+                <p class="doctor-specialty">Cardiologist</p>
+                <p class="doctor-description">Specialized in cardiovascular diseases with over 15 years of experience.</p>
+                <div class="doctor-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Patients Treated</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+                <div class="doctor-actions">
+                    <button class="doctor-btn doctor-btn-primary" onclick="showDoctorDetails(1)">View Profile</button>
+                    <button class="doctor-btn doctor-btn-secondary" onclick="window.location.href='appointment.html'">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="doctor-image">
+                <img src="images/doctor2.jpg" alt="Dr. Michael Chen">
+                <div class="doctor-overlay"></div>
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name">Dr. Michael Chen</h3>
+                <p class="doctor-specialty">Neurologist</p>
+                <p class="doctor-description">Expert in treating neurological disorders and brain-related conditions.</p>
+                <div class="doctor-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">12+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3000+</div>
+                        <div class="stat-label">Patients Treated</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+                <div class="doctor-actions">
+                    <button class="doctor-btn doctor-btn-primary" onclick="showDoctorDetails(2)">View Profile</button>
+                    <button class="doctor-btn doctor-btn-secondary" onclick="window.location.href='appointment.html'">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="doctor-image">
+                <img src="images/doctor3.jpg" alt="Dr. Emily Rodriguez">
+                <div class="doctor-overlay"></div>
+            </div>
+            <div class="doctor-info">
+                <h3 class="doctor-name">Dr. Emily Rodriguez</h3>
+                <p class="doctor-specialty">Pediatrician</p>
+                <p class="doctor-description">Dedicated to providing the best care for children's health and development.</p>
+                <div class="doctor-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4000+</div>
+                        <div class="stat-label">Patients Treated</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">97%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+                <div class="doctor-actions">
+                    <button class="doctor-btn doctor-btn-primary" onclick="showDoctorDetails(3)">View Profile</button>
+                    <button class="doctor-btn doctor-btn-secondary" onclick="window.location.href='appointment.html'">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Details Modal -->
+    <div id="doctorModal" class="doctor-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalDoctorName"></h2>
+                <span class="modal-close" onclick="closeDoctorDetails()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalDoctorImage" class="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <div class="modal-section">
+                        <h3>Specialization</h3>
+                        <p id="modalSpecialty"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Experience</h3>
+                        <p id="modalExperience"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Education</h3>
+                        <p id="modalEducation"></p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Publications</h3>
+                        <p id="modalPublications"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>ModernCare Hospital is committed to providing the highest quality healthcare services to our patients.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@moderncare.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ModernCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Emergency Button -->
+    <a href="emergency.html" class="emergency-btn">
+        <i class="fas fa-ambulance"></i>
+        Emergency
+    </a>
+
+    <!-- Chatbot Root -->
+    <div id="chatbot-root"></div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contact Us</h2>
+            <form class="contact-form" data-aos="fade-up">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/doctors.js"></script>
+</body>
+</html> 

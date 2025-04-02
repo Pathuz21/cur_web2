@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services - ModernCare Hospital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/emergency.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/theme-switcher.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">ModernCare</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="emergency.html" class="active">Emergency</a></li>
+            <li><a href="#" id="contactBtn" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="emergency-hero">
+        <div class="emergency-hero-content">
+            <h1 data-aos="fade-up">24/7 Emergency Care</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Immediate medical attention when you need it most. Our emergency department is staffed with experienced professionals ready to help.</p>
+            <a href="tel:+1234567890" class="emergency-btn" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-phone"></i>
+                Call Emergency: +1 (234) 567-890
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="emergency-contact">
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <h2>Emergency Contact Details</h2>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="info">
+                        <div class="label">Emergency Hotline</div>
+                        <div class="value">+1 (234) 567-890</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-ambulance"></i>
+                    <div class="info">
+                        <div class="label">Ambulance Service</div>
+                        <div class="value">+1 (234) 567-891</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info">
+                        <div class="label">Emergency Department</div>
+                        <div class="value">123 Medical Street, City</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info">
+                        <div class="label">Operating Hours</div>
+                        <div class="value">24/7</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emergency-form" data-aos="fade-left">
+                <h2>Send Emergency Message</h2>
+                <form id="emergencyForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Your Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Emergency Details</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="emergency-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Emergency Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Services -->
+    <section class="emergency-services">
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Cardiac Emergency</h3>
+                <p>Immediate care for heart attacks, chest pain, and other cardiac emergencies.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-brain"></i>
+                <h3>Neurological Emergency</h3>
+                <p>Specialized care for strokes, seizures, and other neurological emergencies.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-baby"></i>
+                <h3>Pediatric Emergency</h3>
+                <p>Dedicated emergency care for children and infants.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-car-crash"></i>
+                <h3>Trauma Care</h3>
+                <p>Advanced trauma care for accidents and injuries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>ModernCare Hospital is committed to providing the highest quality healthcare services to our patients.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@moderncare.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ModernCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Root -->
+    <div id="chatbot-root"></div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contact Us</h2>
+            <form class="contact-form" data-aos="fade-up">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/emergency.js"></script>
+</body>
+</html> 
+ 
