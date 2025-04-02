@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - ModernCare Hospital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">ModernCare</a>
+        <div class="admin-nav">
+            <span>Welcome, Admin</span>
+            <button id="logoutBtn" class="btn btn-primary">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel">
+        <h2>Add New Blog Post</h2>
+        
+        <form class="blog-form" id="blogForm">
+            <div class="form-group">
+                <label for="title">Blog Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">Blog Content</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="image">Blog Image</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+                <img id="imagePreview" class="image-preview" alt="Preview">
+            </div>
+            
+            <button type="submit" class="submit-btn">Publish Blog Post</button>
+        </form>
+
+        <div class="blog-list">
+            <h3>Published Posts</h3>
+            <div id="publishedPosts">
+                <!-- Published posts will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin-panel.js"></script>
+</body>
+</html> 

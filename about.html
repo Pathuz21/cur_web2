@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ModernCare Hospital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/theme-switcher.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2196F3">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="hoslogo1.png" alt="ModernCare Hospital Logo">
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><button class="cta-button">Book Appointment</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">About Us</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Your Trusted Healthcare Partner</p>
+        </div>
+    </section>
+
+    <!-- 3D Medical Symbol Section -->
+    <section class="medical-3d">
+        <div class="container">
+            <div class="medical-3d-wrapper">
+                <div id="medical-canvas" data-aos="fade-up"></div>
+                <div class="medical-3d-content" data-aos="fade-left">
+                    <h2>Modern Healthcare</h2>
+                    <p>Experience the future of medical care with our cutting-edge technology and expert professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history">
+        <div class="container">
+            <div class="history-grid">
+                <div class="history-content" data-aos="fade-right">
+                    <h2>Our History</h2>
+                    <p>Founded in 1990, ModernCare Hospital has been at the forefront of medical innovation and patient care. What started as a small community hospital has grown into a world-class medical facility serving patients from around the globe.</p>
+                    <p>Over the years, we have continuously expanded our services and facilities to meet the growing healthcare needs of our community while maintaining our commitment to excellence and compassionate care.</p>
+                </div>
+                <div class="history-image" data-aos="fade-left">
+                    <img src="images/hospital-history.jpg" alt="Hospital History">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission-vision-grid">
+                <div class="mission-card" data-aos="fade-up">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Our Mission</h3>
+                    <p>To provide exceptional healthcare services with compassion, innovation, and excellence, making a positive difference in the lives of our patients and their families.</p>
+                </div>
+                <div class="vision-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-eye"></i>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading healthcare provider, recognized globally for our commitment to patient care, medical innovation, and community well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="leadership">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Leadership Team</h2>
+            <div class="leadership-grid">
+                <div class="leader-card" data-aos="fade-up">
+                    <div class="leader-image">
+                        <img src="images/leader1.jpg" alt="Dr. Sarah Johnson">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="position">Chief Executive Officer</p>
+                        <p class="bio">With over 20 years of healthcare experience, Dr. Johnson leads our hospital with vision and dedication to excellence.</p>
+                    </div>
+                </div>
+                <div class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-image">
+                        <img src="images/leader2.jpg" alt="Dr. Michael Chen">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <p class="position">Chief Medical Officer</p>
+                        <p class="bio">Dr. Chen oversees our medical operations and ensures the highest standards of patient care.</p>
+                    </div>
+                </div>
+                <div class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-image">
+                        <img src="images/leader3.jpg" alt="Dr. Emily Rodriguez">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <p class="position">Director of Patient Care</p>
+                        <p class="bio">Dr. Rodriguez is dedicated to enhancing patient experience and implementing innovative care practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up">
+                    <i class="fas fa-heart"></i>
+                    <h3>Compassion</h3>
+                    <p>We treat every patient with empathy, understanding, and respect.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-star"></i>
+                    <h3>Excellence</h3>
+                    <p>We strive for the highest standards in everything we do.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>We embrace new technologies and methods to improve patient care.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>We are committed to serving and supporting our local community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>ModernCare Hospital is committed to providing exceptional healthcare services with a focus on patient comfort and well-being.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ModernCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/medical-3d.js"></script>
+</body>
+</html> 
